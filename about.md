@@ -20,7 +20,7 @@ You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://gi
 
 {% for category in site.categories %}
 <h4>
-  <a name="{{ category | first}}"> {{category | first}}</a>
+  <div id="{{ category | first}}"> {{category | first}}</a>
   <ul>
   {% for posts in category %}
     {% for post in posts %}
