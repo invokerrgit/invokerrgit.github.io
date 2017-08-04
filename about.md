@@ -15,3 +15,24 @@ You can find out more info about customizing your Jekyll theme, as well as basic
 You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
 
 You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+
+## Archive ##
+
+{% for category in site.categories %}
+<h4>
+  <a name="{{ category | first}}"> {{category | first}}</a>
+  <ul>
+  {% for posts in category %}
+    {% for post in posts %}
+      {% if post.url %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+  </ul>
+</h4>
+
+{% endfor %}
