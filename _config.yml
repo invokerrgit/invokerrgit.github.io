@@ -10,7 +10,7 @@ description: > # this means to ignore newlines until "email:"
 
 email: pp2moonbird#gmail.com
 #blog logo
-logo: "/assets/images/avatar.jpg"
+logo: "/assets/images/avatar.png"
 float_logo: true # true, false (default)
 
 # blog cover
@@ -18,7 +18,7 @@ cover: "http://7sbymk.com1.z0.glb.clouddn.com/background_image.jpg"
 
 name: 'pp'
 author: 'pp'
-author_image: "/assets/images/avatar.jpg"
+author_image: "/assets/images/avatar.png"
 
 paginate:	5
 
